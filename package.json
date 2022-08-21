@@ -1,0 +1,45 @@
+{
+	"name": "bebasinfo",
+	"description": "berita indonesia",
+	"version": "0.0.1",
+	"license": "UNLICENSED",
+	"bin": {
+		"bebasinfo": "index.js",
+		"berita": "index.js"
+	},
+	"author": {
+		"name": "Muhammad Hajid Al Akhtar",
+		"email": "hajidalakhtar@gmail.com",
+		"url": "https://hajid.me"
+	},
+	"keywords": [
+		"bebasinfo",
+		"Muhammad Hajid Al Akhtar"
+	],
+	"files": [
+		"index.js",
+		"utils"
+	],
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"pkg": {
+		"targets": [
+		  "node14-macos-x64"
+		],
+		"outputPath": "release"
+	  },
+	"dependencies": {
+		"axios": "^0.27.2",
+		"chalk": "^4.1.2",
+		"cli-alerts": "^1.2.2",
+		"cli-handle-error": "^4.4.0",
+		"cli-handle-unhandled": "^1.1.1",
+		"cli-meow-help": "^3.1.0",
+		"cli-welcome": "^2.2.2",
+		"meow": "^9.0.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.7.1"
+	}
+}
